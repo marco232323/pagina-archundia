@@ -1,0 +1,143 @@
+body{
+
+background: ;
+
+}
+.container, .button, .nav{
+
+position: absolute;
+
+}
+
+.container{
+margin: auto;
+top: 20%;
+left: 10%;
+margin-left: -20px
+
+}
+
+#toggle{
+
+display: none;
+}
+
+
+
+.button{
+	z-index: 999;
+	width: 43px;
+	height: 43px;
+	background: #f28482;
+	border-radius: 100%;
+	transition: all 0.5s ease-in-out;
+	box-shadow: 1px 3px 10px 0 rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+
+
+.button:before{
+	position: absolute;
+	top: 20px;
+	left: 9px;
+	content: '';
+	width: 25px;
+	height: 2px;
+background: #ffff;
+transform: rotate(90deg);
+}
+
+
+.button:after{
+position: absolute;
+top: 20px;
+left: 9px;
+content: '';
+width: 25px;
+height: 2px;
+background: #fff;
+}
+
+
+
+.nav{
+transform: translateY(-10%);
+opacity: 0;
+top: 13;
+transition: all 0.5s ease-in-out;
+background: white;
+width: 150px;
+border-radius: 5px;
+transform: tralateY(0%);
+box-shadow: 2px 3px 10px 0 rgba(0,0,0,0.1);
+}
+
+
+
+.nav a{
+text-aling: center;
+display: block;
+margin:20px 0;
+color: #f28482;
+text-decoration: none;
+font-family: sans-serif;
+text-transform: 2px;
+letter-spacing:2px;
+transition: all 300ms;
+}
+
+
+
+
+#toggle:checked ~ .nav{
+opacity: 1;
+transform: translateY(10%);
+}
+
+#toggle:checked ~ .button{
+transform: rotate(135deg);
+box-shadow: 0 0 0 0 transparent;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
